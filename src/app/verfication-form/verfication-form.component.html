@@ -1,0 +1,19 @@
+<div class="container bg-light text-center">
+  <h3 class="mt-5 pt-3">Welcome to verification Form</h3>
+  <form novalidate (ngSubmit)="onSubmit(userVerfication)" [formGroup]="userVerfication" class="py-5" >
+    <label>
+      <span>verification Code </span>
+      <input type="text" placeholder="Your verification code" formControlName="verfCode" class="form-control">
+    </label>
+    <div class="error" *ngIf="userVerfication.get('verfCode').hasError('required') && userVerfication.get('verfCode').touched" class="text-danger">
+      verification code is required
+    </div>
+    <br>
+    <div class="error" *ngIf="userVerfication.get('verfCode').hasError('maxlength')" class="text-danger">
+      Verfication code must be 4 digits
+    </div>
+    <br>
+    <button type="submit" [disabled]="userVerfication.invalid" class="btn btn-primary mb-5">  <a class="text-white">Send</a> </button> <br>
+  </form>
+</div>
+    

@@ -1,0 +1,68 @@
+[
+    {
+   "id": 63,
+   "name": "تانيا الاتحاد ٢٠٠مل x ٤٨ قارورة/الكرتون",
+   "nameEn": "Tania-Al-Ittihad 200ml x 48 Bottles/Carton",
+   "nameAr": "تانيا الاتحاد ٢٠٠مل x ٤٨ قارورة/الكرتون",
+   "price": 16,
+   "oldPrice": 0,
+   "image": "http://stage.api.taniawater.sa/uploads/item-images/a32722dcaacc0956f1e0a1cff481cea9c5fb21f3.jpeg",
+   "cityId": 14,
+   "minimumAmountToOrder": 2
+},
+{
+   "id": 62,
+   "name": "تانيا الاتحاد ٣٣٠مل x ٤٠ قارورة/الكرتون",
+   "nameEn": "Tania-Al-Ittihad 330ml x 40 Bottles/Carton",
+   "nameAr": "تانيا الاتحاد ٣٣٠مل x ٤٠ قارورة/الكرتون",
+   "price": 16,
+   "oldPrice": 0,
+   "image": "http://stage.api.taniawater.sa/uploads/item-images/b2d136a10ed52f7d495baeff1c8f8bf74f190698.jpeg",
+   "cityId": 14,
+   "minimumAmountToOrder": 2
+},
+{
+   "id": 61,
+   "name": "تانيا شرنك ٢٠٠مل x ٢٠ قارورة",
+   "nameEn": "shrink 200ml x20 Bottles",
+   "nameAr": "تانيا شرنك ٢٠٠مل x ٢٠ قارورة",
+   "price": 8,
+   "oldPrice": 0,
+   "image": "http://stage.api.taniawater.sa/uploads/item-images/fd5e4f9577add8b011bc4d1ce39bfa0b2bd610b9.jpeg",
+   "cityId": 14,
+   "minimumAmountToOrder": 2
+},
+{
+   "id": 24,
+   "name": "تانيا النصر٣٣٠مل x ٤٠ قارورة/الكرتون",
+   "nameEn": "Tania-Nassr 330ml x 40 Bottles/Carton",
+   "nameAr": "تانيا النصر٣٣٠مل x ٤٠ قارورة/الكرتون",
+   "price": 50,
+   "oldPrice": 0,
+   "image": "http://stage.api.taniawater.sa/uploads/item-images/914c373544b9b7b05db91660781be7c229c2fb04.jpeg",
+   "cityId": 14,
+   "minimumAmountToOrder": 1
+},
+{
+   "id": 23,
+   "name": "تانيا ٦٠٠مل x ٢٤ قارورة/الكرتون",
+   "nameEn": "Tania 600ml x 24 Bottles/Carton",
+   "nameAr": "تانيا ٦٠٠مل x ٢٤ قارورة/الكرتون",
+   "price": 40,
+   "oldPrice": 0,
+   "image": "http://stage.api.taniawater.sa/uploads/item-images/e1c5e367d8addb032f6435c7f9941b6fd3ffdc5c.jpeg",
+   "cityId": 14,
+   "minimumAmountToOrder": 5
+},
+{
+   "id": 21,
+   "name": "تانيا ٣٣٠مل x ٤٠ قارورة/الكرتون",
+   "nameEn": "Tania 330ml x 40 Bottles/Carton",
+   "nameAr": "تانيا ٣٣٠مل x ٤٠ قارورة/الكرتون",
+   "price": 30,
+   "oldPrice": 100,
+   "image": "http://stage.api.taniawater.sa/uploads/item-images/7c3de071516a13783ac0ffb83cce2464c4fbc1a2.jpeg",
+   "cityId": 14,
+   "minimumAmountToOrder": 6
+}
+]

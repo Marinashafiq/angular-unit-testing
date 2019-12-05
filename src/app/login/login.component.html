@@ -1,0 +1,27 @@
+<div class="container bg-light text-center">
+    <h3 class="mt-5 pt-3">Welcome to Login Form</h3>
+    <form novalidate (ngSubmit)="onSubmit(user)" [formGroup]="user" class="py-5" >
+      <label>
+        <span>Full name</span>
+        <input type="text" placeholder="Your full name" formControlName="name" class="form-control">
+      </label>
+      <div class="error" *ngIf="user.get('name').hasError('required') && user.get('name').touched" class="text-danger">
+        Name is required
+      </div>   
+        <br>
+        <label>
+          <span>Password</span>
+          <input type="password" placeholder="Your Password" formControlName="password" class="form-control">
+        </label>
+        <div
+          class="error"
+          *ngIf="user.get('password').hasError('required') && user.get('password').touched" class="text-danger">
+          Password is required
+        </div>
+
+    <br>
+      <button type="submit" [disabled]="user.invalid" class="btn btn-primary">Login</button> 
+    
+    </form>
+  
+  </div>

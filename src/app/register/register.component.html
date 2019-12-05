@@ -1,0 +1,69 @@
+<div class="container bg-light text-center">
+  <h3 class="mt-5 pt-3">Welcome to Registeration Form</h3>
+  <form novalidate (ngSubmit)="onSubmit(registeredUser)" [formGroup]="registeredUser" class="py-5">
+    <label>
+      <span>Full name</span>
+      <input type="text" placeholder="Your full name" formControlName="fullName" class="form-control name">
+    </label>
+    <div class="error" *ngIf="registeredUser.get('fullName').hasError('required') && registeredUser.get('fullName').touched"
+      class="text-danger">
+      Name is required
+    </div>
+
+    <br>
+    <label>
+      <span>Email</span>
+      <input type="text" placeholder="Your Email" formControlName="email" class="form-control email">
+    </label>
+    <div class="error" *ngIf="registeredUser.get('email').hasError('required') && registeredUser.get('email').touched" class="text-danger">
+      email is required
+    </div>
+    <div class="error" *ngIf="registeredUser.get('email').hasError('pattern') && registeredUser.get('email').touched" class="text-danger">
+      Pattern Required
+    </div>
+
+    <br>
+    <label>
+      <span>Phone Number</span>
+      <input type="number" placeholder="Your phone number" formControlName="phone" class="form-control phone">
+    </label>
+    <div class="error" *ngIf="registeredUser.get('phone').hasError('required') && registeredUser.get('phone').touched" class="text-danger">
+      Phone is required
+    </div>
+    <div class="error" *ngIf="registeredUser.get('phone').hasError('pattern') && registeredUser.get('phone').touched" class="text-danger">
+      Pattern Required
+    </div>
+    <br>
+    <div class="form-group" formGroupName="passwords">
+      <label>
+        <span>Password</span>
+        <input type="password" placeholder="Your Password" formControlName="password" class="form-control pass">
+      </label>
+      <div class="error text-danger" *ngIf="registeredUser.get(['passwords', 'password']).hasError('required') && registeredUser.get(['passwords', 'password']).touched">
+        Password is required
+      </div>
+      <div class="error text-danger" *ngIf="registeredUser.get(['passwords', 'password']).hasError('minlength') || registeredUser.get(['passwords', 'password']).hasError('maxlength') && registeredUser.get(['passwords', 'password']).touched">
+        Must be (6-12) Character
+      </div>
+      <div class="error text-danger" *ngIf="registeredUser.get(['passwords', 'password']).hasError('pattern') ">
+        Must Contain letters and Numbers
+      </div>
+      <br>
+      <label>
+        <span>confirm_password</span>
+        <input type="password" placeholder="Re-Enter Your Password" formControlName="confirm_password" class="form-control confirm_password">
+      </label>
+      <div class="error text-danger" *ngIf="registeredUser.get(['passwords', 'confirm_password']).hasError('required') && registeredUser.get(['passwords', 'confirm_password']).touched">
+        Password is required
+      </div>
+      <div class="error text-danger" *ngIf="registeredUser.get(['passwords','password']).value != registeredUser.get(['passwords','confirm_password']).value  && registeredUser.get(['passwords', 'confirm_password']).touched  && registeredUser.get(['passwords','confirm_password']).value != null">
+        Password does not match</div>
+    </div>
+    <br>
+    <button type="submit" [disabled]="registeredUser.invalid" class="btn btn-primary mb-5"> Sign up </button>
+    <br>
+
+    <a routerLink='/login' class="py-5"> Already a user please login </a>
+  </form>
+
+</div>
